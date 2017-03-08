@@ -10,6 +10,7 @@ public class Seller {
 	private String pan;
 	private String accno;
 	private long mobile;
+<<<<<<< HEAD
 	private String ifsc;
 	private String address;
 	private int pincode;
@@ -39,6 +40,9 @@ public class Seller {
 	public void setIfsc(String ifsc) {
 		this.ifsc = ifsc;
 	}
+=======
+	
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	public long getMobile() {
 		return mobile;
 	}

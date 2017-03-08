@@ -4,9 +4,12 @@
 <html>
 
 <%
+<<<<<<< HEAD
 
 	session.removeAttribute("seller");	
 
+=======
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	if(session.getAttribute("message") != null)
 	{
 		String message = session.getAttribute("message").toString();
@@ -121,15 +124,19 @@
 	                        </div>
 	                        <div class="row">
 	                            <div class="col-sm-6">
+<<<<<<< HEAD
 	                                <span>Mobile</span><br>
 	                                <input type="text" class="col-sm-12 col-xs-12" maxlength="10" name="mobile" required="required" id="seller_mobile">
 	                                <span id="seller_mobile_msg" hidden="hidden" class="red"><small>Invalid Mobile Number</small></span>
 	                            </div>
 	                            <div class="col-sm-6">
+=======
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	                                <span>Email</span><br>
 	                                <input type="email" class="col-sm-12 col-xs-12" name="email" required="required" id="seller_reg_email">
 	                                <small><span id="seller_reg_email_msg" hidden="hidden" class="red">Email Already Registered</span></small>
 	                            </div>
+<<<<<<< HEAD
 	                        </div>
 	                        <div class="row">
 	                            <div class="col-sm-6">
@@ -140,10 +147,16 @@
 	                                <span>Re-Password</span><br>
 	                                <input id="seller_re-pwd" type="password" class="col-sm-12 col-xs-12" name="re-pw" required="required">
 	                                <span id="seller_pwd_msg" hidden="hidden" class="red"><small>Password Mismatched</small></span>
+=======
+	                            <div class="col-sm-6">
+	                                <span>Password</span><br>
+	                                <input type="password" class="col-sm-12 col-xs-12" name="pw" required="required">
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	                            </div>
 	                        </div>
 	                        <div class="row">
 	                            <div class="col-sm-6">
+<<<<<<< HEAD
 	                            	<span>Account Number</span><br>
 	                        		<input type="text" class="col-sm-12 col-xs-12" name="acc" required="required">
 	                            </div>
@@ -151,6 +164,16 @@
 	                                <span>IFSC Code</span><br>
 	                                <input type="text" class="col-sm-12 col-xs-12" name="ifsc" required="required" id="seller_reg_email">
 	                            </div>
+=======
+	                                <span>Mobile</span><br>
+	                                <input type="text" class="col-sm-12 col-xs-12" maxlength="10" name="mobile" required="required" id="seller_mobile">
+	                                <span id="seller_mobile_msg" hidden="hidden" class="red"><small>Invalid Mobile Number</small></span>
+	                            </div>
+	                        	<div class="col-sm-6">
+	                            	<span>Account Number</span><br>
+	                        		<input type="text" class="col-sm-12 col-xs-12" name="acc" required="required">
+	                            </div>
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	                        </div>
 	                        <div class="row">
 	                            <div class="col-sm-6">
@@ -163,7 +186,11 @@
 	                            </div>
 	                        </div>
 	                        <div class="row">
+<<<<<<< HEAD
 	                        	<div class="col-sm-12">
+=======
+	                        	<div class="col-sm-12"><br>	
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	                        		<input type="submit" class="col-sm- col-xs-12 btn btn-danger submit" value="Start Selling!" id="start_selling">
 	                            </div>
 	                        </div>

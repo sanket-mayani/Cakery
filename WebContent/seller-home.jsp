@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<<<<<<< HEAD
     pageEncoding="ISO-8859-1" import="model.Seller"%>
+=======
+    pageEncoding="ISO-8859-1"%>
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -34,13 +38,21 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<<<<<<< HEAD
 <body id="seller_home_body">
+=======
+<body>
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 
 	<div class="container">
     	
         <div class="row">
             <div class="col-xs-12" id="logo"> 
+<<<<<<< HEAD
                 <a href="seller-home.jsp"><img src="images/logo.png" alt="logo"></a>
+=======
+                <a href="seller-home.html"><img src="images/logo.png" alt="logo"></a>
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
             </div>      
         </div>
               
@@ -60,6 +72,7 @@
                 
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="seller-home.jsp"><span class="glyphicon glyphicon-briefcase"></span><span> My Orders</span></a></li>
+<<<<<<< HEAD
                     <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Catalogue</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-usd"></span> Payments</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> Returns</a></li>            
@@ -67,6 +80,14 @@
                 <ul class="nav navbar-nav navbar-right">                    
                     <li><a href="seller-account.jsp"><span class="glyphicon glyphicon-user"></span><span> My Account</span></a></li>
                     <li><a href="seller-index.jsp"><span class="glyphicon glyphicon-off"></span><span> Sign Out</span></a></li>
+=======
+                    <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span> View Products</a></li>
+                    <li><a href="add-product.jsp"><span class="glyphicon glyphicon-plus"></span> Add Product</a></li>            
+                </ul>
+                <ul class="nav navbar-nav navbar-right">                    
+                    <li><a data-toggle="modal" href="#"><span class="glyphicon glyphicon-user"></span><span> My Account</span></a></li>
+                    <li><a data-toggle="modal" href="#"><span class="glyphicon glyphicon-off"></span><span> Sign Out</span></a></li>
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
                 </ul>
                 
             </div>
@@ -75,6 +96,7 @@
         
     </nav><!-- End of Navigation Bar -->
 	
+<<<<<<< HEAD
 	<!-- Seller home modal -->
     <div id="seller_home_modal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-sm">
@@ -115,6 +137,11 @@
 	<%		
 		}
     %>
+=======
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
     
 </body>
 

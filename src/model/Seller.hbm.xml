@@ -38,6 +38,7 @@
 			<column name="ACCNO"></column>
 		</property>	
 		
+<<<<<<< HEAD
 		<property name="ifsc">
 			<column name="IFSC"></column>
 		</property>
@@ -54,5 +55,7 @@
 			<column name="City"></column>
 		</property>
 		
+=======
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	</class>
 </hibernate-mapping>

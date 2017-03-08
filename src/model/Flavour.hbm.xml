@@ -5,7 +5,11 @@
 
 <hibernate-mapping>
 	
+<<<<<<< HEAD
 	<class name="model.Flavour" table="Flavour">
+=======
+	<class name="model.Flavour" table="flavour">
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	
 		<id name="fid" type="int" column="FID">
 			<generator class="increment"></generator>

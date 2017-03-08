@@ -41,7 +41,10 @@ public class SellerRegisterationServlet extends HttpServlet {
 		String s4=request.getParameter("vat");
 		String s5=request.getParameter("pan");
 		String s6=request.getParameter("acc");
+<<<<<<< HEAD
 		String s7=request.getParameter("ifsc");
+=======
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 		
 		DAO dao = new DAO();
 		HttpSession session = request.getSession();
@@ -58,7 +61,10 @@ public class SellerRegisterationServlet extends HttpServlet {
 			seller.setVatid(s4);
 			seller.setPan(s5);
 			seller.setAccno(s6);
+<<<<<<< HEAD
 			seller.setIfsc(s7);
+=======
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 			dao.insertSeller(seller);
 			
 			session.setAttribute("message","Registration Successfull");

@@ -1,11 +1,17 @@
 
 $(document).ready(function(){
+<<<<<<< HEAD
 	
 /* --------------------
 	index.jsp 
 -------------------- */
 	
 	
+=======
+
+
+
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	/* --------------------
 		Navigation Bar 
 	-------------------- */
@@ -120,12 +126,33 @@ $(document).ready(function(){
 		return (login_email_flag);
 	});
 	
+<<<<<<< HEAD
 	
 /* --------------------
 	seller-index.jsp 
 -------------------- */
 	
 	
+=======
+	/* --------------------
+		Seller Home 
+	-------------------- */
+	
+	$("#add-product_body").ready(function(){
+		
+		$.ajax({ url: "GetFlavour",
+	    	success: function(result){
+			
+					var json=JSON.parse(result);
+					for(var i=0;i<json.length;i++){	    		
+						var text=json[i].flavourname;
+						$("#flavour").append('<input type="radio" name="flavour" value='+ text +' /> ' + text + '<br />');
+					}
+
+    }});
+
+	});
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	/* --------------------
 		Seller Registration Form 
 	-------------------- */
@@ -170,6 +197,7 @@ $(document).ready(function(){
 		       seller_mobile_flag = false;
 		  }		
 	});
+<<<<<<< HEAD
 	
 	$("#seller_re-pwd, #seller_pwd").keyup(function(){		
 		var x = $("#seller_pwd").val();
@@ -188,6 +216,11 @@ $(document).ready(function(){
 
 	$("#seller_reg_form").submit(function(){
 		return (seller_reg_email_flag && seller_mobile_flag && seller_pwd_flag);
+=======
+
+	$("#seller_reg_form").submit(function(){
+		return (seller_reg_email_flag && seller_mobile_flag);
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	});
 	
 	
@@ -219,12 +252,17 @@ $(document).ready(function(){
 		
 		hreq.open("get", "UserCheck?u="+uname+"&type=seller", true);
 		hreq.send();		
+<<<<<<< HEAD
+=======
+
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	});
 	
 	$("#seller_login_form, #seller_login_form2").submit(function(){
 		return (seller_login_email_flag);
 	});
 	
+<<<<<<< HEAD
 	
 /* --------------------
 	seller-home.jsp 
@@ -232,4 +270,6 @@ $(document).ready(function(){
 	
 	
 	
+=======
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 });

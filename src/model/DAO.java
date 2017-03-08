@@ -33,6 +33,20 @@ public class DAO {
 
 	}
 	
+<<<<<<< HEAD
+=======
+	public void insertProduct(Product product){
+		SessionFactory sf=new Configuration().configure().buildSessionFactory();
+		Session s=sf.openSession();
+		Transaction tr=s.beginTransaction();
+
+		s.save(product);
+
+		tr.commit();
+
+	}
+	
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	public List<User> searchUser(User log)
 	{
 		SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
@@ -56,8 +70,12 @@ public class DAO {
 		}
 			return al;
 
+<<<<<<< HEAD
 	}
 	
+=======
+}
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	public List<Seller> searchSeller(Seller log)
 	{
 		SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
@@ -81,8 +99,12 @@ public class DAO {
 		}
 			return al;
 
+<<<<<<< HEAD
 	}
 	
+=======
+}
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 	public List<AdminLoginvo> searchAdmin(AdminLoginvo log)
 	{
 		SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
@@ -106,6 +128,58 @@ public class DAO {
 		}
 			return al;
 
+<<<<<<< HEAD
 	}
 	
+=======
+}
+	public List<Flavour> searchFlavour(Flavour flavour)
+	{
+		SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
+
+		Session session = sessionFactory.openSession();
+
+		List<Flavour> al=new ArrayList<Flavour>();
+		try 
+		{
+			Transaction tr=session.beginTransaction();
+			Query q=session.createQuery("from Flavour where name='"+flavour.getName()+"'");
+			al=q.list();
+			tr.commit();
+		}
+
+		catch (Exception e) 
+		{
+
+				e.printStackTrace();
+
+		}
+			return al;
+
+}
+		public List<Flavour> getFlavour()
+	{
+		SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
+
+		Session session = sessionFactory.openSession();
+
+		List<Flavour> al=new ArrayList<Flavour>();
+		try 
+		{
+			Transaction tr=session.beginTransaction();
+			Query q=session.createQuery("from Flavour");
+			al=q.list();
+			tr.commit();
+		}
+
+		catch (Exception e) 
+		{
+
+				e.printStackTrace();
+
+		}
+			return al;
+
+}
+>>>>>>> e1b404e52b3f7a5b2fb6ccc78abb0e995336382b
 }
